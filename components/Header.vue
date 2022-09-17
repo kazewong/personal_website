@@ -4,7 +4,7 @@
 			<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 				<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 					<!-- Header buttons -->
-					<DropdownMenu name="About" linkList=[{message:'Foo'}]/>
+                    <DropdownMenu name="About" :linkList="[{dir:'blog' , name:'Blog'}]"></DropdownMenu>
 					<DropdownMenu name="Science"/>
 					<!-- <NuxtLink class="mr-5 hover:text-gray-900" to="/">About</NuxtLink>
 					<NuxtLink class="mr-5 hover:text-gray-900" to="/science">Science</NuxtLink>

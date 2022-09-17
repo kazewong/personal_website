@@ -1,5 +1,5 @@
 <template>
-    <div class="mr-5 hover:text-gray-900" @click="toggleDropdown" @mouseleave="setDropdownFalse">
+    <div class="mr-5 hover:text-gray-900" @click="toggleDropdown">
         <h1>
             {{ name }}
         </h1>
@@ -14,7 +14,7 @@
         x-transition:leave-end="opacity-0 scale-90" 
         class="absolute z-20 w-48 py-2 mt-2 bg-white rounded-md shadow-xl dark:bg-gray-800">
         <li v-for="link in linkList">
-            <NuxtLink to={{link.dir}}>{{link.name}}</NuxtLink>
+            <NuxtLink :to=link.dir> {{ link.name }} </NuxtLink>
         </li>
             <!-- <a href="#" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"> your profile </a>
             <a href="#" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"> Your projects </a>
