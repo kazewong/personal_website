@@ -5,7 +5,8 @@
 				<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 					<!-- Header buttons -->
                     <DropdownMenu name="About" class="px-10"></DropdownMenu>
-					<DropdownMenu name="Science" :linkList="scienceList" />
+					<DropdownMenu name="Science" class="px-10" :linkList="scienceList" />
+                    <DropdownMenu name="Personal"  class="px-10" :linkList="personalList" />
 				</nav>
 			</div>
 		</header>
@@ -19,6 +20,10 @@ export default{
             scienceList: [
             {dir:'/Science/blog' , name:'Blog'},
             {dir:'/Science/summary', name:'Summary'}
+        ],
+        personalList: [
+            {dir:'/Personal/animation', name:'Animation'},
+            {dir:'/Personal/highjump', name:'High jump'},
         ]
         }
     }
