@@ -1,5 +1,5 @@
 <template>
-    <div class="mr-5 hover:text-indigo-700" @click="toggleDropdown">
+    <div class="mx-5 hover:text-indigo-700" @click="toggleDropdown">
         <h1>
             {{ name }}
         </h1>

@@ -1,12 +1,16 @@
 <template>
-    <div class="container mx-auto">
-		<header class="text-gray-600 body-font">
-			<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-				<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+    <div class="fixed mx-auto min-w-full bg-transparent">
+		<header class="text-white body-font">
+			<div class="container mx-auto flex flex-wrap p-5 flex-row items-center">
+                <div class="flex mr-auto">
+                        Kaze Wong
+                </div>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
 					<!-- Header buttons -->
-                    <DropdownMenu name="About" class="px-10"></DropdownMenu>
-					<DropdownMenu name="Science" class="px-10" :linkList="scienceList" />
-                    <DropdownMenu name="Personal"  class="px-10" :linkList="personalList" />
+					<NuxtLink to="/" class="mx-5"> About </NuxtLink>
+					<DropdownMenu name="Science" class="" :linkList="scienceList" />
+                    <DropdownMenu name="Personal"  class="" :linkList="personalList" />
 				</nav>
 			</div>
 		</header>
