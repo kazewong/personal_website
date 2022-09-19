@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed mx-auto min-w-full bg-transparent">
+    <div class="container mx-auto min-w-full bg-transparent">
 		<header class="text-white body-font">
 			<div class="container mx-auto flex flex-wrap p-5 flex-row items-center">
                 <div class="flex mr-auto">
@@ -22,8 +22,9 @@ export default{
     data(){
         return {
             scienceList: [
+            {dir:'/Science/summary', name:'Summary'},
             {dir:'/Science/blog' , name:'Blog'},
-            {dir:'/Science/summary', name:'Summary'}
+            {dir:'/Science/tutorials', name:'Tutorials'},
         ],
         personalList: [
             {dir:'/Personal/animation', name:'Animation'},
