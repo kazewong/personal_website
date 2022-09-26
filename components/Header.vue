@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto min-w-full bg-transparent">
+    <div class="container mx-auto min-w-full bg-stone-900">
 		<header class="text-white body-font">
 			<div class="container mx-auto flex flex-wrap p-5 flex-row items-center">
                 <div class="flex mr-auto">

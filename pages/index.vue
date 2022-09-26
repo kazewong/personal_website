@@ -14,7 +14,7 @@
         />
         Your browser does not support the video tag.
          </video>
-        <h1 class="absolute text-white top-1/2 left-1/2 text-center"> Kaze Wong</h1>
+        <h1 class="absolute text-white top-1/2 left-1/2 -indent-12"> Kaze Wong</h1>
         </div>
     </section>
     <!-- Interest (Science/Animation/Jumping) --> 
